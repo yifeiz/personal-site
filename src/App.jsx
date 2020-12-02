@@ -1,6 +1,6 @@
 import React from "react";
 
-import profile from "./imgs/favicon.jpg";
+import profile from "./imgs/headshot.jpg";
 
 import "./styles/App.scss";
 
@@ -16,16 +16,32 @@ const App = () => {
         </div>
       </div>
       <div className="footer">
-        <a href="https://github.com/yifei7zhang" target="_blank">
+        <a
+          href="https://github.com/yifei7zhang"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <i class="fab fa-github fa-2x"></i>
         </a>
-        <a href="https://www.linkedin.com/in/yifei-zhang1/" target="_blank">
+        <a
+          href="https://www.linkedin.com/in/yifei-zhang1/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <i class="fab fa-linkedin-in fa-2x"></i>
         </a>
-        <a href="mailto:yifei.zhang@uwaterloo.ca" target="_blank">
+        <a
+          href="mailto:yifei.zhang@uwaterloo.ca"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <i class="far fa-envelope fa-2x"></i>
         </a>
-        <a href={`${process.env.PUBLIC_URL}/resume.pdf`} target="_blank">
+        <a
+          href={`${process.env.PUBLIC_URL}/resume.pdf`}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Resume
         </a>
       </div>
