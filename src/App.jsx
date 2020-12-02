@@ -1,10 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 
 import profile from "./imgs/headshot.jpg";
+import background from "./imgs/background.jpg";
 
 import "./styles/App.scss";
 
 const App = () => {
+  const [loaded, setLoaded] = useState(false);
+
+  if (!loaded) {
+    return (
+      <div className="root">
+        <img
+          src={background}
+          style={{ display: "none" }}
+          onLoad={() => setLoaded(true)}
+          alt="temp-background"
+        />
+        BLAH
+      </div>
+    );
+  }
   return (
     <div className="root">
       <div className="main-card">
