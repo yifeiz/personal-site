@@ -33,7 +33,7 @@ const App = () => {
       </div>
       <div className="footer">
         <a
-          href="https://github.com/yifei7zhang"
+          href="https://github.com/yifeiz"
           target="_blank"
           rel="noopener noreferrer"
         >
