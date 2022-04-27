@@ -29,12 +29,11 @@ const App = () => {
       <div className={`main-card ${loaded ? `fade-in` : null}`}>
         <img className="profile-img" src={profile} alt="profile" />
         <div className="card-text">
-          Hey there! My name is Yifei Zhang, and I'm a 3rd year Software
-          Engineering Student at the University of Waterloo.
+          Hey there! My name is Yifei Zhang, and I'm a 4th year Software
+          Engineering student at the University of Waterloo.
           <br />
-          This site is still under construction, with more coming soon! In the
-          meantime, feel free to connect with me using any of the links below,
-          or checkout my resume.
+          Feel free to connect with me using any of the links below, or checkout
+          my resume.
         </div>
       </div>
       <div className={`footer ${loaded ? `fade-in` : null}`}>
