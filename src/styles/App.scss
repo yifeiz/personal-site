@@ -7,6 +7,13 @@ body {
   background-color: #a59ecc;
 }
 
+a {
+  color: white;
+  &:hover {
+    color: #aad;
+  }
+}
+
 .home {
   width: 100vw;
   height: 100vh;
@@ -115,13 +122,13 @@ body {
     flex: 0 0 70px;
     font-size: 20px;
   }
-
+  
   a {
     color: white;
     &:hover {
       color: #aad;
     }
-
+  
     &:not(:last-child) {
       padding-right: 20px;
     }

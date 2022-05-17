@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 
 import profile from "./imgs/headshot.jpg";
 import background from "./imgs/background.jpg";
@@ -7,17 +7,11 @@ import "./styles/App.scss";
 
 const App = () => {
   const [loaded, setLoaded] = useState(false);
-  const [imageLoaded, setImageLoaded] = useState(false);
   // TODO: Restart css animation (https://css-tricks.com/restart-css-animation/)
 
   return (
     <div className={`home ${loaded ? `fade-in` : null}`}>
-      <img
-        src={background}
-        style={{ display: "none" }}
-        onLoad={() => setImageLoaded(true)}
-        alt="temp-background"
-      />
+      <img src={background} style={{ display: "none" }} alt="temp-background" />
       <div className="drop" />
       <div
         className="wave"
@@ -31,9 +25,10 @@ const App = () => {
         <div className="card-text">
           Hey there! My name is Yifei Zhang, and I'm a 4th year Software
           Engineering student at the University of Waterloo.
-          <br />
-          Feel free to connect with me using any of the links below, or checkout
-          my resume.
+        </div>
+        <div className="card-text">
+          Checkout some other SE students{" "}
+          <a href="https://se-webring.xyz/">here!</a>
         </div>
       </div>
       <div className={`footer ${loaded ? `fade-in` : null}`}>
