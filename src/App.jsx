@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 import profile from "./imgs/headshot.jpg";
 import background from "./imgs/background.jpg";
@@ -54,7 +54,7 @@ const App = () => {
           <i className="far fa-envelope"></i>
         </a>
         <a
-          href={`${process.env.PUBLIC_URL}/resume.pdf`}
+          href={`${import.meta.env.BASE_URL}resume.pdf`}
           target="_blank"
           rel="noopener noreferrer"
         >
