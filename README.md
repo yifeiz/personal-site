@@ -1,3 +1,5 @@
+> **Moved:** this source now lives in [yifeiz/yifeiz.github.io](https://github.com/yifeiz/yifeiz.github.io). This repo is archived.
+
 # personal-site
 
 Source for [yifeiz.com](https://yifeiz.com). Built with React + Vite.
